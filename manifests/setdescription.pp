@@ -5,7 +5,7 @@ class eyplib::setdescription(
 
   if($description!=undef)
   {
-    file { '/opt/eypconf/id/description':
+    file { '/etc/eypconf/id/description':
       ensure  => 'present',
       owner   => 'root',
       group   => 'root',
