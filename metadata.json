@@ -1,6 +1,6 @@
 {
   "name": "eyp-eyplib",
-  "version": "0.1.25",
+  "version": "0.1.0",
   "author": "Jordi Prats",
   "summary": "Utility functions for puppet modules",
   "license": "Apache-2.0",
@@ -48,7 +48,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 3.0.0"
+      "version_requirement": ">= 4.0.0"
     }
   ]
 }

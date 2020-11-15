@@ -1,5 +1,5 @@
 class eyplib::autobanner(
-                          $autobanner_file               = '/opt/eypconf/autobanner',
+                          $autobanner_file               = '/etc/eypconf/autobanner',
                           $include_legal                 = false,
                           $include_description           = true,
                           $include_puppet_managed_server = true,

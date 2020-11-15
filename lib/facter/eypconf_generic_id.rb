@@ -1,7 +1,7 @@
-if File.exists?('/opt/eypconf/id') then
-  Dir.entries("/opt/eypconf/id").select {|f| !File.directory? f}.each do |i|
+if File.exists?('/etc/eypconf/id') then
+  Dir.entries("/etc/eypconf/id").select {|f| !File.directory? f}.each do |i|
 
-    genetic_id = Facter::Util::Resolution.exec("bash -c 'cat /opt/eypconf/id/#{i}'").to_s
+    genetic_id = Facter::Util::Resolution.exec("bash -c 'cat /etc/eypconf/id/#{i}'").to_s
 
     if i[0]=='.' then
       if i == ".magic" then
@@ -34,7 +34,7 @@ if File.exists?('/opt/eypconf/id') then
 
       Facter.add("eypconf_#{fact_name}_source") do
           setcode do
-            "/opt/eypconf/id/#{i}"
+            "/etc/eypconf/id/#{i}"
           end
       end
     end
